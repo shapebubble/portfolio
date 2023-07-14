@@ -1,0 +1,28 @@
+body {
+background-color: rgb(235, 235, 235);
+font-family: 'Courier New', Courier, monospace;
+font-size: 17px;
+}
+
+img{
+    /*
+width: 100%;
+*/
+}
+
+a{
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+}
+a:hover{
+    color: brown;
+
+}
+
+.btn{
+
+    background-color: black;
+    padding: 10pz,20,11px,20px;
+    color: aliceblue;
+}
