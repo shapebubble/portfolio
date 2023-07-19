@@ -9,19 +9,19 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
     <h1>Adam Barnes Portfolio</h1>
     <header>
-        <div>
+        <div class="container">
             <img src="img/icons/logo_150x32.png" alt="logo">
 
             <nav>
-                <ul>
+                <ul class="navigation">
                     <li><a href="about.html">About</a></li>
                     <li><a href="index.html">Work</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -31,66 +31,71 @@
     </header>
     <main>
         <div>
-            <div>
-                <h1>Hi, my name is Adam Barnes.</h1>
+            <div id="hero" class="container">
+                <div>
+                    <h1>Hi, my name is Adam Barnes.</h1>
+                </div>
+                <span>I'm a UX/UI designer from Vejle</span>
+                <p>Hi, I’m Adam! I’m from 1983, English and living in Denmark.</p>
+                <p>I love design and used to have a design and manufacturing company but now I’ve found a new interest
+                    UX/UI
+                    design. </p>
             </div>
-            <span>I'm a UX Reseacher and designer from Vejle</span>
-            <p>Hi, I’m Adam! I’m from 1983, English and living in Denmark.</p>
-            <p>I love design and used to have a design and manufacturing company but now I’ve found a new interest UX/UI
-                design. </p>
-        </div>
+            <div id="work">
+                <div class="container">
+                    <h2>My Work</h2>
+                    <div class="row">
+                        <picture>
+                            <source srcset="img/home_page_imgs/crust_@600.png" media="(max-width:767px)">
+                            <img src="img/home_page_imgs/crust_@600.png" alt="My Image">
+                        </picture>
+                    </div><!-- end first column -->
+                    <div><!-- open second column (used for text) -->
+                        <h3>Crust, The Money Saving App</h3><!-- heading for the project -->
+                        <p><!-- open paragraph -->
+                            Crust was an app to help users save for specific events. It was important to that the app
+                            had a
+                            more serious feel than my spotted app so this is a good demonstration of my agility in
+                            designing
+                            for a different target audience and style.
+                        </p><!-- end paragraph -->
+                      
+                        <h3>Skills Used</h3>
+                        <p><!-- open paragraph -->
+                            Data display, Aesthetics, Layout, Functionality
+                        </p><!-- end paragraph -->
+                        <a href="crust.html" class="button">Read More</a>
+                    </div><!-- end second column -->
+                </div><!-- end row that holds (2) columns for project -->
 
-        <div>
-            <div><!-- Crust - Project one - open row that holds (2) columns for project -->
-                <div><!-- open first column (used for image) -->
-                    <picture>
-                        <source srcset="img/home_page_imgs/crust_@600.png" media="(max-width:767px)">
-                        <img src="img/home_page_imgs/crust_@600.png" alt="My Image">
-                                         </picture>
-                </div><!-- end first column -->
-                <div><!-- open second column (used for text) -->
-                    <h3>Crust, The Money Saving App</h3><!-- heading for the project -->
-                    <p><!-- open paragraph -->
-                        Crust was an app to help users save for specific events. It was important to that the app had a
-                        more serious feel than my spotted app so this is a good demonstration of my agility in designing
-                        for a different target audience and style.
-                    </p><!-- end paragraph -->
-                    <a href="spotted.html"><button>See Project</button></a>
-                    <h3>Skills Used</h3>
-                    <p><!-- open paragraph -->
-                        Data display, Aesthetics, Layout, Functionality
-
-                    </p><!-- end paragraph -->
-                    <a href="#">Read more</a><!-- button or link label -->
-                </div><!-- end second column -->
-            </div><!-- end row that holds (2) columns for project -->
-
-            <div><!-- Spotted - Project 2 - open row that holds (2) columns for project -->
-                <div><!-- open first column (used for image) -->
-                    <picture>
-                        <source srcset="img/home_page_imgs/spotted_@600.png" media="(max-width:767px)">
-                        <img src="img/home_page_imgs/spotted_@600.png" alt="My Image">
-                    </picture>
-                </div><!-- end first column -->
-                <div><!-- open second column (used for text) -->
-                    <h3>Spotted, Vehicle Sighting And Enthusiast App</h3><!-- heading for the project -->
-                    <p><!-- open paragraph -->
-                        This was more fun than realistic and tapped into my passions and youth. The app allows users to
-                        log sightings of vehicles and then share them with the world. It showcases my ability to develop
-                        a logical user interface with a strong brand aesthetic and personality.
-                    </p><!-- end paragraph -->
-                    <a href="crust.html"><button>See Project</button></a>
-                    <h3>Skills Used</h3>
-                    <p><!-- open paragraph -->
-                        Functionality, Brief design, Prototyping, Layout
-                    </p><!-- end paragraph -->
-                    <a href="#">Read more</a><!-- button or link label -->
-                </div><!-- end second column -->
-            </div><!-- end row that holds (2) columns for project -->
-        </div>
+                <div class="container"><!-- Spotted - Project 2 - open row that holds (2) columns for project -->
+                    <div><!-- open first column (used for image) -->
+                        <div class="row">
+                        <picture>
+                            <source srcset="img/home_page_imgs/spotted_@600.png" media="(max-width:767px)">
+                            <img src="img/home_page_imgs/spotted_@600.png" alt="My Image">
+                        </picture>
+                    </div><!-- end first column -->
+                    <div><!-- open second column (used for text) -->
+                        <h3>Spotted, Vehicle Sighting And Enthusiast App</h3><!-- heading for the project -->
+                        <p><!-- open paragraph -->
+                            This was more fun than realistic and tapped into my passions and youth. The app allows users
+                            to
+                            log sightings of vehicles and then share them with the world. It showcases my ability to
+                            develop
+                            a logical user interface with a strong brand aesthetic and personality.
+                            </p><!-- end paragraph -->
+                            <h3>Skills Used</h3>
+                            <p><!-- open paragraph -->
+                                Functionality, Brief design, Prototyping, Layout
+                            </p><!-- end paragraph -->
+                            <a href="spotted.html" class="button">Read More</a>
+                            </div><!-- end second column -->
+                </div><!-- end row that holds (2) columns for project -->
+            </div>
     </main>
     <footer id="contact">
-        <div>
+        <div class="container">
             <h2>Get in Touch</h2>
             <p>
                 Do you like my work and want to discuss opportunities? Please get in touch. Call: <a
@@ -98,7 +103,7 @@
                     91 10 09 80</a>. Prefer sending an email?
             </p>
             <div>
-                <a href="mailto:shapebubble@googlemail.com">Email me</a>
+                <a href="mailto:shapebubble@googlemail.com" class="button contact">Email me</a>
             </div>
             <div>
                 <!--Social Media Layout and Placeholders-->
@@ -128,10 +133,10 @@
             <p>Copyright of Adam Barnes 2023</p>
         </div>
 
-        
 
-        </div>
-   
+
+
+
     </footer>
 
 

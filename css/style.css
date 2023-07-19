@@ -1,3 +1,19 @@
+/*
+colours used: 
+Primary
+yellow #ffd139
+orange #ec5d0d
+blue #089ca3
+
+Secondary
+dark orange #ec5f0d80
+dark blue #055f64
+
+Text
+grey #4a4a4a
+
+*/
+
 body {
     background-color: #ffffff;
     font-family: 'poppins', sans-serif;
@@ -36,12 +52,12 @@ body {
 
   .button {
     display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-    background-color: #ff7f50;
+    background-color: #ec5d0d;
     color: #ffffff; /* needed to override the default link color */
     font-weight: 400;
     padding: 10px;
     border-radius: 3px;
-    border-bottom: 2px solid #994c30; /* width of the border, type, color */
+    border-bottom: 2px solid #ec5f0d80; /* width of the border, type, color */
     transition: 0.2s opacity;
     
   }
@@ -51,12 +67,28 @@ body {
   }
 .button.contact {
          background-color: transparent;
-        color: #ff7f50;
+        color: #ec5d0d;
         text-transform: uppercase;
-        border: 2px solid #ff7f50;
+        border: 2px solid #ec5d0d;
       
 }
 .button.contact:hover {
-    background-color: #ff7f50;
+    background-color: #ec5f0d80;
     color: #ffffff;
+  }
+
+  Header {
+    background-color: #ffd139;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  /* layout styling */
+
+  .container {
+    padding: 0 15px;
+  }
+
+  .row {
+    margin: 25px 0; /* 25px top and bottom, 0 left and right */
   }
