@@ -50,6 +50,14 @@ body {
     width:100%;
   }
 
+  /* links and buttons */
+
+  a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #ec5d0d;
+  }
+
   .button {
     display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
     background-color: #ec5d0d;
@@ -67,21 +75,18 @@ body {
   }
 .button.contact {
          background-color: transparent;
-        color: #ec5d0d;
+        color: #ffffff;
         text-transform: uppercase;
-        border: 2px solid #ec5d0d;
+        border: 2px solid #ffffff;
+        padding: 10px 20px 11px 20px;
       
 }
 .button.contact:hover {
-    background-color: #ec5f0d80;
+    background-color: #ffffff80;
     color: #ffffff;
   }
 
-  Header {
-    background-color: #ffd139;
-    padding: 10px;
-    margin: 10px;
-  }
+
 
   /* layout styling */
 
@@ -92,3 +97,111 @@ body {
   .row {
     margin: 25px 0; /* 25px top and bottom, 0 left and right */
   }
+
+  /* header */
+
+  header {
+    background-color: #ffd139;
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    position: fixed;
+    text-align:center;
+   }
+
+   .css-box-shadow{
+    /*start ------------*/
+    width: [object Object]px; 
+    height: [object Object]px; 
+    background: #F8F8F8; 
+    border: solid #BDBDBD 1px; 
+    box-shadow: 0 0 39px rgba(0, 0, 0, 0.2)  ; 
+    -webkit-box-shadow: 0 0 39px rgba(0, 0, 0, 0.2)  ; 
+    -moz-box-shadow: 0 0 39px rgba(0, 0, 0, 0.2)  ; 
+  }
+
+  .logo{
+max-width: 150px;
+text-align:center;
+  }
+
+  header ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  header ul li{
+    display: inline-block;    
+  }
+
+  nav{
+    display: inline-block;
+  }
+
+  nav > ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  nav > ul > li > a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #4a4a4a;
+  }
+
+/* hero*/
+#hero{
+  background-color: #ffffff;
+  padding: 20px 0;
+  display: inline;
+  width: 100%;
+}
+
+#hero h1{
+  text-align:center;
+}
+
+/*main*/
+main {
+  padding-top: 133px;
+}
+
+/* alignment */
+
+.center{
+  text-align:center;
+}
+
+  /* footer */
+
+  footer{
+    background-color: #089ca3;
+    color:#ffffff;
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  .fix-size{
+    width: 40px;
+    height: auto;
+  }
+
+  footer a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #ffffff;
+  }
+
+  .social-icons{
+    margin-top:30px;
+      }
+
+      .social-icons a{
+        margin:0 15px;
+          }
