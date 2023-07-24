@@ -94,10 +94,13 @@ body {
     padding: 0 15px;
   }
 
-  .row {
-    margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  .row, .row-2 {
+    margin: 25px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0px;
   }
-
+  
   /* header */
 
   header {
@@ -137,11 +140,12 @@ text-align:center;
 
   nav{
     display: inline-block;
+    padding: 99px;
   }
 
   nav > ul {
     list-style-type: none;
-    padding: 0;
+    padding: 0px;
   }
 
   nav > ul > li {
@@ -161,6 +165,7 @@ text-align:center;
   padding: 20px 0;
   display: inline;
   width: 100%;
+  text-align: center;
 }
 
 #hero h1{
@@ -198,10 +203,60 @@ main {
     color: #ffffff;
   }
 
-  .social-icons{
+.social-icons{
     margin-top:30px;
-      }
+ }
 
-      .social-icons a{
-        margin:0 15px;
-          }
+.social-icons a{
+   margin:0 15px;
+}
+
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+  body{
+    font-size: 18px;
+  }
+  #hero span{
+    display: block;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  [class*="col-"] {
+    float: left;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .row-2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    margin-top: 50px;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
