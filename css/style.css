@@ -14,6 +14,10 @@ grey #4a4a4a
 
 */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     background-color: #ffffff;
     font-family: 'poppins', sans-serif;
@@ -104,43 +108,35 @@ body {
   /* header */
 
   header {
-    background-color: #ffd139;
+    background-color: #fff;
     padding: 10px;
-    margin: 10px;
     width: 100%;
     position: fixed;
+    left: 0;
+    right:0;
+    top:0;
     text-align:center;
+    box-shadow: 0 0 39px rgba(0, 0, 0, 0.2); 
+          border-bottom: solid #BDBDBD 1px; 
    }
 
-   .css-box-shadow{
-    /*start ------------*/
-    width: [object Object]px; 
-    height: [object Object]px; 
-    background: #F8F8F8; 
-    border: solid #BDBDBD 1px; 
-    box-shadow: 0 0 39px rgba(0, 0, 0, 0.2)  ; 
-    -webkit-box-shadow: 0 0 39px rgba(0, 0, 0, 0.2)  ; 
-    -moz-box-shadow: 0 0 39px rgba(0, 0, 0, 0.2)  ; 
-  }
+ 
+.logo-stuff {
+  float: centre;
+  margin: 10px;
+}
+ 
 
   .logo{
 max-width: 150px;
-text-align:center;
   }
 
-  header ul{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  header ul li{
-    display: inline-block;    
-  }
 
   nav{
-    display: inline-block;
-    padding: 99px;
+     
+  width: 100%
+   
+
   }
 
   nav > ul {
@@ -158,6 +154,12 @@ text-align:center;
     font-weight: 700;
     color: #4a4a4a;
   }
+
+
+
+ 
+
+
 
 /* hero*/
 #hero{
@@ -216,17 +218,90 @@ main {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+    
+      body{
+    font-size: 18px;
+  }
+    
+  .container {
+    padding: 0 0px;
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+    
+    
   header {
     text-align: unset;
+    padding: 20px 0 13px;
   }
   nav {
     width: auto;
     float: right;
-    margin-top: 4px;
+    margin-top: -4px;
   }
+
+  #hero span{
+    display: block;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .row-2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    margin-top: 50px;
+  }
+
+  .picture{
+    margin-top:50%;
+  }
+}
+
+/*----------animation---------------*/
+svg{
+  width: 100%;
+max-width: 100%;
+height: auto;
+}
+
+
+
+.sun{
+@keyframes color-change {
+  from {fill: #edc655;}
+  to {fill: #f76414;}
+}
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
   body{
     font-size: 18px;
   }
+    
+  .container {
+    padding: 0 0px;
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+    
+    
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: -4px;
+  }
+
   #hero span{
     display: block;
   }
@@ -247,13 +322,13 @@ Medium devices (640px and larger)
     grid-gap: 40px;
     margin-top: 50px;
   }
+.logo-stuff{
+  margin:30px;
+  padding:0px;
 }
+    
+  }
 
-/* ==============================
-Large devices (1024px or larger)
-================================= */
-@media only screen and (min-width: 1024px) {
-}
 
 /* ==============================
 X-large devices (1440px or larger)
