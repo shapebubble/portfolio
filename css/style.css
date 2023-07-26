@@ -268,14 +268,16 @@ max-width: 100%;
 height: auto;
 }
 
-
-
-.sun{
 @keyframes color-change {
   from {fill: #edc655;}
   to {fill: #f76414;}
 }
-}
+
+.sun{
+
+    animation: 4s color-change infinite alternate linear;
+    }
+
 
 /* ==============================
 Large devices (1024px or larger)
